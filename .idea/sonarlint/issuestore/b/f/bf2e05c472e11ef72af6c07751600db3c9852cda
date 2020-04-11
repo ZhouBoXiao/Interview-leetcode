@@ -1,0 +1,29 @@
+
+\
+java:S1854"?Remove this useless assignment to local variable "allocation1".(ŒÉ±Â8ß‹¤¾.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÑäÚÎúÿÿÿÿ
+R
+java:S1481"0Remove this unused "allocation4" local variable.(Ø¾¤½üÿÿÿÿ8ß‹¤¾.
+K
+java:S1659")Declare "allocation3" on a separate line.(Ø¾¤½üÿÿÿÿ8ß‹¤¾.
+R
+java:S1481"0Remove this unused "allocation2" local variable.(Ø¾¤½üÿÿÿÿ8ß‹¤¾.
+a
+java:S1854"?Remove this useless assignment to local variable "allocation3".(ş…áúÿÿÿÿ8˜¹¤¾.
+\
+java:S1854"?Remove this useless assignment to local variable "allocation4".(ÈÌåè8˜¹¤¾.
+{	java:S115	"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(û‹üÿÿÿÿÿ8­³˜¾.
+a
+java:S1854"?Remove this useless assignment to local variable "allocation2".(Û—¯¶üÿÿÿÿ8˜¹¤¾.
+K
+java:S1659")Declare "allocation2" on a separate line.(Ø¾¤½üÿÿÿÿ8ß‹¤¾.
+R
+java:S1481"0Remove this unused "allocation3" local variable.(Ø¾¤½üÿÿÿÿ8ß‹¤¾.
+K
+java:S1659")Declare "allocation4" on a separate line.(Ø¾¤½üÿÿÿÿ8ß‹¤¾.
+R
+java:S1481"0Remove this unused "allocation1" local variable.(Ø¾¤½üÿÿÿÿ8ß‹¤¾.
+s
+java:S1854"QRemove this useless assignment to local variable "stringStringConcurrentHashMap".(›¶‹ùÿÿÿÿ8†êÀ¢”.
+d
+java:S1481"BRemove this unused "stringStringConcurrentHashMap" local variable.(›¶‹ùÿÿÿÿ8†êÀ¢”.

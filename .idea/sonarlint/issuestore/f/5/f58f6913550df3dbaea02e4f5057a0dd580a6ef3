@@ -1,0 +1,9 @@
+
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(­©Ó8«ê¡Ø“.
+E
+java:S1659	"#Declare "right" on a separate line.(¹¼‚Èüÿÿÿÿ8›ì‹Ø“.
+D
+java:S1659""Declare "down" on a separate line.(…›¹‹ùÿÿÿÿ8›ì‹Ø“.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(öˆ¼ú
+z	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8§ªŸØ“.

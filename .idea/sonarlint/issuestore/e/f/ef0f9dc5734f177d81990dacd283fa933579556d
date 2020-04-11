@@ -1,0 +1,14 @@
+
+U	java:S1069"9Replace this use of System.out or System.err by a logger.(†¬Õ÷8Äúƒ¥•.
+U	java:S1068"9Replace this use of System.out or System.err by a logger.(ûØÅÕ8§…›¥•.
+W	java:S125"<This block of commented-out lines of code should be removed.(À‰^8Ş¡û¤•.
+Z	java:S106<"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8û¥•.
+E
+java:S1481"")Remove this unused "step" local variable.(£¹±S8Àäå¥•.
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(Çµí‘8éËô¤•.
+<
+java:S1659"Declare "m" on a separate line.(ÑÍµá8Ç“µ¤•.
+;
+java:S1659'"Declare "y" on a separate line.(ÑÁƒ$8ô“ñ¤•.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(İú¸Ğ

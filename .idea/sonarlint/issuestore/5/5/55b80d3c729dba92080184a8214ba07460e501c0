@@ -1,0 +1,8 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(оќА‘
+>
+java:S1659"!Declare "pre" on a separate line.(пЫўЏ8СђАџ•.
+]
+java:S2259"AA "NullPointerException" could be thrown; "pre" is nullable here.(Ьъп>8СђАџ•.
+<
+java:S1659"Declare "q" on a separate line.(пЫўЏ8СђАџ•.

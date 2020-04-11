@@ -1,0 +1,17 @@
+
+@
+java:S1659"#Declare "match" on a separate line.(Ëô¬8Š˜úğ.
+?
+java:S1659""Declare "left" on a separate line.(Ëô¬8ÿÅîğ.
+G
+java:S1481"*Remove this unused "count" local variable.(ı—“¾8ığ.
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ñ¶ä›8ÃÆäğ.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´ŸÒôÿÿÿÿÿ
+t
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(áÇ«úÿÿÿÿ8ÕÙßñ.
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(€ú¾ü8Äœûæ.
+V
+java:S1854"9Remove this useless assignment to local variable "count".(ı—“¾8ığ.
+Z	java:S1065"9Replace this use of System.out or System.err by a logger.(³ıÃ·øÿÿÿÿ8ÊÖûæ.

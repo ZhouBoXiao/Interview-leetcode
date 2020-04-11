@@ -1,0 +1,12 @@
+
+Z	java:S106c"9Replace this use of System.out or System.err by a logger.(àÊËüÿÿÿÿ8”­ĞÀ.
+X	java:S1252"<This block of commented-out lines of code should be removed.(±º«ğ8”­ĞÀ.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(óÏ›ëÿÿÿÿÿ
+t
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(Àœ†ìüÿÿÿÿ8”­ĞÀ.
+`
+java:S1128">Remove this unused import 'org.jetbrains.annotations.NotNull'.(éš®ïøÿÿÿÿ8Ì²ŸÀ.
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯Æ¤­øÿÿÿÿ8Œ ÷À.
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯Æ¤­øÿÿÿÿ8Œ ÷À.
+I
+java:S1659"'Declare "cur_right" on a separate line.(¯Æ¤­øÿÿÿÿ8Œ ÷À.
