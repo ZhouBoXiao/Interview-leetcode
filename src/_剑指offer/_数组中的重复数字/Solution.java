@@ -20,13 +20,15 @@ package _剑指offer._数组中的重复数字;
 
 public class Solution {
     public int findRepeatNumber(int[] nums) {
+        int temp = 0;
         for (int i = 0; i < nums.length; i++) {
-
-            while (i != nums[i]) {
-                if (nums[i] == nums[nums[i]]) return nums[i];
-                int tmp = nums[i];
-                nums[i] = nums[tmp];
-                nums[tmp] = tmp;
+            if (nums[i] != i) {
+                if (nums[i] == nums[nums[i]]) {
+                    return nums[i];
+                }
+                temp  = nums[i];
+                nums[i] = nums[temp];
+                nums[temp] = temp;
             }
         }
         return -1;
