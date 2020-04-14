@@ -21,7 +21,7 @@ public class CallableDemo {
     private static final Long KEEP_ALIVE_TIME = 1L;
 
     public static void main(String[] args) {
-
+        System.out.println(Runtime.getRuntime().availableProcessors());
         ThreadPoolExecutor executor = new ThreadPoolExecutor(
                 CORE_POOL_SIZE,
                 MAX_POOL_SIZE,
@@ -30,6 +30,14 @@ public class CallableDemo {
                 new ArrayBlockingQueue<>(QUEUE_CAPACITY),
                 new ThreadPoolExecutor.CallerRunsPolicy()
         );
+
+        TimeUnit unit;
+        BlockingQueue workQueue;
+        ThreadPoolExecutor exector = new ThreadPoolExecutor(2,4 ,31, TimeUnit.SECONDS,
+                new LinkedBlockingQueue<>(3),
+                Executors.defaultThreadFactory(),
+                new ThreadPoolExecutor.AbortPolicy());
+
         List<Future<String>> futureList = new ArrayList<>();
         Callable<String> callable = new MyCallable();
         for (int i = 0; i < 10; i++) {

@@ -1,4 +1,4 @@
-package _链表._翻转链表;
+package _链表._k个一组翻转链表;
 
 
 class ListNode {

@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class ThreadLocalExample implements Runnable{
 
-    private static final ThreadLocal<SimpleDateFormat> formatter = ThreadLocal.withInitial(() -> new SimpleDateFormat("yyyyMMdd HHmm"));
+    private static final ThreadLocal<SimpleDateFormat> formatter = ThreadLocal.withInitial(() -> new SimpleDateFormat("yyyyMMdd HHmmss"));
 
     public static void main(String[] args) throws InterruptedException {
         ThreadLocalExample threadLocalExample = new ThreadLocalExample();
