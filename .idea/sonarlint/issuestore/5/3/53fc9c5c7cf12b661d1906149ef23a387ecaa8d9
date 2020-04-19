@@ -1,8 +1,0 @@
-
-A
-java:S1659"Declare "r" on a separate line.(øÒë§ÿÿÿÿÿ8¢ş¥•.
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡Ğú8¢ş¥•.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(¸šñÙüÿÿÿÿ8¢ş¥•.
-<
-java:S1659"Declare "D" on a separate line.(‡Ğú8¢ş¥•.
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(›—´¶

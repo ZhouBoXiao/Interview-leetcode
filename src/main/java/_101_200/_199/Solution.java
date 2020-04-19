@@ -10,6 +10,10 @@ class TreeNode {
         val = x;
     }
 }
+
+/**
+ * 二叉树的右视图
+ */
 public class Solution {
     List<Integer> ans = new ArrayList<>();
     int deepest = 0;

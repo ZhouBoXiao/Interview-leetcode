@@ -1,18 +1,0 @@
-
-@
-java:S1659"#Declare "s2_ch" on a separate line.(ß¦İÖ8øÄö‡’.
-U	java:S106'"9Replace this use of System.out or System.err by a logger.(š‹›ú8²Ÿé†’.
-m	java:S117
-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À¼öä8øÄö‡’.
-A
-java:S1659
-"$Declare "s2_len" on a separate line.(À¼öä8øÄö‡’.
-m	java:S117
-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À¼öä8øÄö‡’.
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß¦İÖ8øÄö‡’.
-l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±¿´D8 ˆ’.
-l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±¿´D8 ˆ’.
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§é¸
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß¦İÖ8øÄö‡’.
-Y
-java:S1128"7Remove this unused import 'javax.jws.soap.SOAPBinding'.(î¶âÑûÿÿÿÿ8¾è†’.

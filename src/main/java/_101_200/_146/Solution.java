@@ -2,15 +2,22 @@ package _101_200._146;
 
 import javax.swing.*;
 import java.lang.reflect.Field;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.Map;
+import java.util.*;
 
 public class Solution {
     public static void main(String[] args) {
 
+        LRUCache1 cache = new LRUCache1( 2 /* 缓存容量 */ );
 
+        cache.put(1, 1);
+        cache.put(2, 2);
+        cache.get(1);       // 返回  1
+        cache.put(3, 3);    // 该操作会使得密钥 2 作废
+        cache.get(2);       // 返回 -1 (未找到)
+        cache.put(4, 4);    // 该操作会使得密钥 1 作废
+        cache.get(1);       // 返回 -1 (未找到)
+        cache.get(3);       // 返回  3
+        cache.get(4);       // 返回  4
     }
 }
 
@@ -36,6 +43,47 @@ public class Solution {
         return size() > capacity;
     }
 }*/
+class LRUCache1 {
+    int capacity;
+    Map<Integer, Integer> map;
+    LinkedList<Integer> list;
+
+    public LRUCache1(int capacity) {
+        this.capacity = capacity;
+        map = new HashMap<>();
+        this.list = new LinkedList<>();
+
+    }
+
+    public int get(Integer key) {
+        if (map.containsKey(key)) {
+            list.remove(key);
+            list.addLast(key);
+            return map.get(key);
+        }
+        return -1;
+    }
+
+    public void put(Integer key, int value) {
+        if (map.containsKey(key)) {
+            list.remove(key);
+            list.addLast(key);
+            map.put(key, value);
+            return;
+        } else {
+            if (list.size() == capacity) {
+                map.remove(list.removeFirst());
+                list.addLast(key);
+            } else {
+                list.addLast(key);
+            }
+            map.put(key, value);
+
+        }
+    }
+}
+
+
 class LRUCacheBeta<K, V> {
 
     int capacity;

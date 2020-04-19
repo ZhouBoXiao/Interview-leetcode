@@ -52,7 +52,7 @@ public class Solution {
         for (int i = 0 ; i < s.length(); i ++) {
             if (s.charAt(i) == '(') {
                 left++;
-            } else {
+            } else if (s.charAt(i) == ')'){
                 if (left!=0) {
                     left--;
                 } else {
