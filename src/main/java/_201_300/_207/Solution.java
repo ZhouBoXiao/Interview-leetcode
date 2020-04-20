@@ -45,8 +45,9 @@ public class Solution {
     }
 
     private boolean dfs(List<List<Integer>> adjacency, int[] flags, int i) {
-
+        //说明在本轮 DFS 搜索中节点 i 被第 22 次访问，即 课程安排图有环 ，直接返回 False。
         if (flags[i] == 1) return false;
+        //说明当前访问节点已被其他节点启动的 DFS 访问，无需再重复搜索，直接返回 True。
         if (flags[i] == -1) return true;
         flags[i] = 1;
         for (int j : adjacency.get(i)) {

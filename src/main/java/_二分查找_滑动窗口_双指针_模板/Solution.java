@@ -36,7 +36,7 @@ public class Solution {
             return -1;
         return left;
     }
-
+    int[][] dir = new int[][]{{1,0},{-1,0},{0,1},{0,-1}};
 
     int right_bound(int[] nums, int target) {
         int left = 0, right = nums.length - 1;
