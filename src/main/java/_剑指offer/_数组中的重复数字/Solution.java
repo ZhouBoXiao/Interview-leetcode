@@ -18,11 +18,13 @@ package _剑指offer._数组中的重复数字;
 2 <= n <= 100000
  */
 
+import java.util.Optional;
+
 public class Solution {
     public int findRepeatNumber(int[] nums) {
         int temp = 0;
         for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != i) {
+            while (nums[i] != i) {
                 if (nums[i] == nums[nums[i]]) {
                     return nums[i];
                 }
@@ -35,6 +37,6 @@ public class Solution {
 
     }
     public static void main(String[] args) {
-
+        Optional.of(new Solution().findRepeatNumber(new int[]{1,7,9,2,3,4,5,2,6,9,2,5,4,3,0, 2, 5, 3})).ifPresent(System.out::println);
     }
 }
