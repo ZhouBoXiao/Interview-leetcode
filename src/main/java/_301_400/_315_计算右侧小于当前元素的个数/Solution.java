@@ -97,3 +97,48 @@ public class Solution {
 
 
 }
+class Solution1{
+    int[] treeNodes;//线段树的数组实现
+    public List<Integer> countSmaller(int[] nums) {
+        ArrayList<Integer> ans=new ArrayList<>();
+        int len=nums.length;
+        if(len==0) return ans;
+        int smallest=nums[0];  int largest=nums[0];//求取nums的最小最大值
+        for(int e:nums){
+            if(e>largest){
+                largest=e;
+            }
+            if(e<smallest){
+                smallest=e;
+            }
+        }
+        treeNodes=new int[4*(largest-smallest+1)];
+
+        Integer[] smallers=new Integer[len];
+        for(int i=len-1;i>=0;i--){//对末尾到开头每个元素，先求出小于其的数据个数，再插入线段树
+            int ele=nums[i];
+            smallers[i]=smallerNum(smallest,largest,1,ele);
+            insertValue(smallest,largest,1,ele);
+        }
+        return Arrays.asList(smallers);
+    }
+    //插入一个数据，更新线段树
+    private void insertValue(int l,int r,int loc,int value){
+        treeNodes[loc]++;
+        if(l==r) return ;
+        else {
+            int mid=l+(int)((r-l)/2);
+            if(value<=mid) insertValue(l,mid,2*loc,value);
+            else insertValue(mid+1,r,2*loc+1,value);
+        }
+    }
+    //求取小于value的数据个数
+    private int smallerNum(int l, int r,int loc, int value){
+        if(r<value) return treeNodes[loc];
+        else if(l>=value) return 0;
+        else {
+            int mid=l+(int)((r-l)/2);
+            return smallerNum(l,mid,loc*2,value)+smallerNum(mid+1,r,2*loc+1,value);
+        }
+    }
+}

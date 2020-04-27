@@ -39,4 +39,8 @@ public class Solution {
         nums[i] = nums[j];
         nums[j] = temp;
     }
+
+    public static void main(String[] args) {
+        new Solution().permuteUnique(new int[]{1,1,2});
+    }
 }
