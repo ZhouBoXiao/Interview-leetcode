@@ -1,4 +1,4 @@
-package main.java._0_100._2;
+package _0_100._2;
 
 
 class ListNode {
