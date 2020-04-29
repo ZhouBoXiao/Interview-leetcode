@@ -1,4 +1,4 @@
-package _401_500._433;
+package _401_500._433_最小基因变化;
 import java.util.*;
 
 public class Solution {

@@ -7,6 +7,6 @@ public class Solution {
             a =  a ^ nums[i] & ~b;
             b = b ^ nums[i] & ~ a;
         }
-        return
+        return a;
     }
 }
