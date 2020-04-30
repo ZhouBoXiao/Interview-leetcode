@@ -9,4 +9,20 @@ public class Solution {
         }
         return a;
     }
+
+    public int singleNumber2(int[] nums) {
+        int res = 0;
+        for (int i = 0; i < 32; i++) {
+            int cnt = 0;
+            for (int num : nums) {
+                if (((1<<i) & num ) != 0) {
+                    cnt++;
+                }
+            }
+            if (cnt % 3 != 0) {
+                res += (1<<i);
+            }
+        }
+        return res;
+    }
 }
