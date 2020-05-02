@@ -20,8 +20,20 @@ public class Solution {
         }
         return max;
     }
+    public int lengthOfLongestSubstring1(String s) {
 
+        int n = s.length();
+        int[] index = new int[128];
+        int left = 0;
+        int maxLen = 0;
+        for (int right = 0; right < n; right++) {
+            left = Math.max(index[s.charAt(right)], left);
+            maxLen = Math.max(maxLen, right - left + 1);
+            index[s.charAt(right)] = right + 1;
+        }
+        return maxLen;
+    }
     public static void main(String[] args) {
-        System.out.println(new Solution().lengthOfLongestSubstring("abcabcbb"));
+        System.out.println(new Solution().lengthOfLongestSubstring1("abcabcbb"));
     }
 }
