@@ -1,6 +1,4 @@
-package _二叉树._验证二叉搜索树;
-
-import java.util.*;
+package _二叉树._98_验证二叉搜索树;
 
 class TreeNode {
     int val;
@@ -25,6 +23,7 @@ public class Solution {
         if(!helper(root.left,lower,val)) return false;
         if(!helper(root.right,val,upper)) return false;
         return true;
+
     }
 
 }

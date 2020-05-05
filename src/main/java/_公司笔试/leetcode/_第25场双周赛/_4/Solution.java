@@ -6,91 +6,50 @@ import java.util.*;
  * @Description:
  * @Author:boxiao
  * @Data: 2020/5/2 22:31
+ * 总共有 n 个人和 40 种不同的帽子，帽子编号从 1 到 40 。
+ *
+ * 给你一个整数列表的列表 hats ，其中 hats[i] 是第 i 个人所有喜欢帽子的列表。
+ *
+ * 请你给每个人安排一顶他喜欢的帽子，确保每个人戴的帽子跟别人都不一样，并返回方案数。
+ *
+ * 由于答案可能很大，请返回它对 10^9 + 7 取余后的结果。
  */
 public class Solution {
-    static int MOD = 1000000007;
-    int cnt = 0;
+    /**
+     * dp[i][j]  前i个帽子，n个人的状态为j时的方案数。
+     * 状态j的具体含义：如果j=1023，即2进制为1111111111时，所有人都戴着帽子，相反j=0时，所有人都没戴帽子。
+     * 接下来要考虑的是状态转移，对于dp[i][j]，有以下两种情况：
+     * dp[i - 1][j]：帽子i根本没被用到
+     * dp[i - 1][j xor k]：帽子被用到（k为二进制只有1位为一的整数，且j & k != 0，且该位表示的匹配符合该人的喜好
+     * 把以上两种情况（最多1 + 10种转移）全加在一起，就可以得到dp[i][j]了。
+     * 最后dp[-1][-1]就是我们要的方案数。
+     *
+     */
     public int numberWays(List<List<Integer>> hats) {
-
         int n = hats.size();
-//        boolean[] vis1 = new boolean[41];
-//        boolean[] vis2 = new boolean[41];
-        Queue<Integer> q1 = new LinkedList<>();
-        Set<Integer> vis1 = new HashSet<>();
-        Set<Integer> vis2 = new HashSet<>();
-        Queue<Integer> q2 = new LinkedList<>();
-
-//        Deque<Integer> deque = new ArrayDeque<>();
-        for (int i = 0; i < hats.get(0).size(); i++) {
-            vis1.add(hats.get(0).get(i));
-            q1.add(1);
-
-            for (int j = n - 1; j < hats.get(n - 1).size(); j++) {
-                vis1.add(hats.get(n-1).get(i));
-                q2.add(n-2);
-                while (!q1.isEmpty() && !q2.isEmpty()) {
-
-                    if (q1.size() > q2.size()) {
-                        Queue<Integer> tmp = q1;
-                        q1 = q2;
-                        q2 = tmp;
-                        Set<Integer> t = vis1;
-                        vis1 = vis2;
-                        vis2 = t;
-                    }
-                    int size = q1.size();
-                    while (size-- > 0) {
-                        int cur = q1.poll();
-                        for (int k = 0; k < hats.get(cur).size(); k++) {
-                            int temp = hats.get(cur).get(k);
-                            if (vis1.contains(temp)) {
-                                continue;
-                            }
-                            if (vis2.contains(temp)) {
-                                cnt++;
-                                if (cnt > MOD) {
-                                    cnt %= MOD;
-                                }
-                            } else {
-                                q1.offer(cur);
-                                vis1.add(temp);
-                            }
-
-                        }
-
-                    }
-
-                }
-
-
-                vis1.remove(hats.get(n-1).get(i));
-
-
+        boolean[][] valid = new boolean[50][n];
+        for (int i = 0; i < n; ++i) {
+            for (int h : hats.get(i)) {
+                valid[h][i] = true;
             }
-            vis1.remove(hats.get(0).get(i));
-//            vis1[hats.get(0).get(i)] = false;
         }
-        return cnt;
+        int mod = 1000000007;
+        int m = (1 << n);
+        int[][] dp = new int[50][m];
+        dp[0][0] = 1;
+        for (int i = 1; i <= 40; ++i) {
+            for (int j = 0; j < m; ++j) {
+                dp[i][j] = (dp[i][j] + dp[i - 1][j]) % mod;
+                for (int k = 0; k < n; ++k) {
+                    if ((j & (1 << k)) != 0 && valid[i][k]) {
+                        dp[i][j] = (dp[i][j] + dp[i - 1][j ^ (1 << k)]) % mod;
+                    }
+                }
+            }
+        }
+        return dp[40][m - 1];
     }
 
-//    void dfs(List<List<Integer>> hats, boolean[] vis, int cur, int n ) {
-//
-//        if (cur == n) {
-//            cnt++;
-//            if (cnt > MOD) {
-//                cnt %= MOD;
-//            }
-//            return;
-//        }
-//
-//        for (int i = 0; i < hats.get(cur).size(); i++) {
-//            int temp = hats.get(cur).get(i);
-//            if (vis[temp]) continue;
-//            vis[temp] = true;
-//            dfs(hats, vis, cur+1, n);
-//            vis[temp] = false;
-//        }
-//    }
     public static void main(String[] args) {
         List<List<Integer>> hats = new ArrayList<>();
         for (int i = 0; i < 3; i++) {

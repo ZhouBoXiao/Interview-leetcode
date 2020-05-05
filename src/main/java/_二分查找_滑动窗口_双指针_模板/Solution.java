@@ -1,5 +1,9 @@
 package _二分查找_滑动窗口_双指针_模板;
 
+/**
+ * 1、从有序数组中查找某个值
+ * 最大化最小值，最小化平均值用二分
+ */
 public class Solution {
     int binary_search(int[] nums, int target) {
         int left = 0, right = nums.length - 1;
@@ -72,8 +76,26 @@ public class Solution {
         撤销选择
  *
  */
-
-
+/***
+ 二分查找
+int binarySearch(int[] nums, int target) {
+    int left = 0;
+    int right = nums.length - 1;
+    while(left <= right) {
+        int mid = (right + left) / 2;
+        if(nums[mid] == target)
+            return mid;
+        else if (nums[mid] < target)
+            left = mid + 1;
+        else if (nums[mid] > target)
+            right = mid - 1;
+    }
+    return -1;
+}
+ 2、两数之和
+ 3、反转数组
+ 4、滑动窗口算法
+ */
 /**
  * 滑动窗口
  *
@@ -86,6 +108,7 @@ public class Solution {
      while (valid) {
          window.remove(s[left]);
          left++;
+        //中间有跳跃一定要把结果删掉
      }
  }
- */
+*/
