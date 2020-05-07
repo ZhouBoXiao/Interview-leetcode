@@ -38,6 +38,31 @@ public class Solution {
         return list;
     }
 
+    public List<Integer> leftSideView(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
+        if (root == null) return list;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+
+        while (!queue.isEmpty()) {
+
+            int size = queue.size();
+            list.add(queue.peek().val);
+            while (size-- > 0) {
+                TreeNode node = queue.poll();
+
+
+                if (node.left != null) {
+                    queue.offer(node.left);
+                }
+                if (node.right != null) {
+                    queue.offer(node.right);
+                }
+            }
+        }
+        return list;
+    }
+
 
     public static void main(String[] args) {
 
