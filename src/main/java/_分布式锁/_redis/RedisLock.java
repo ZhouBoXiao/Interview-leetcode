@@ -59,7 +59,7 @@ public class RedisLock {
     public boolean unlock(String id) {
 
         Jedis jedis = jedisPool.getResource();
-        String script = "if redis.call('get', KEYS[1]) == ARGV[1] then" +
+            String script = "if redis.call('get', KEYS[1]) == ARGV[1] then" +
                             "  return redis.call('del',KEYS[1])" +
                          "else" +
                          "     return 0 " +
