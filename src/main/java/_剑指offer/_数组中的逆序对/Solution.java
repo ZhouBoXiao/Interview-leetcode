@@ -1,5 +1,7 @@
 package _剑指offer._数组中的逆序对;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Solution {
     // 后有序数组中元素出列的时候，计算逆序个数
 
@@ -80,5 +82,45 @@ public class Solution {
             }
         }
         return res;
+    }
+
+
+}
+class Solution1 {
+
+    private long cnt = 0;
+    private int[] tmp;  // 在这里声明辅助数组，而不是在 merge() 递归函数中声明
+    public int reversePairs(int[] nums) {
+        tmp = new int[nums.length];
+        mergeSort(nums, 0, nums.length - 1);
+        return (int) cnt;
+    }
+    void mergeSort(int[] nums, int l , int h) {
+        if (l >= h) return;
+        int m = l + (h - l )/2;
+        mergeSort(nums, l , m);
+        mergeSort(nums, m+1, h);
+        merge(nums, l, m , h);
+
+    }
+
+    void merge(int[] nums,int l, int m , int h) {
+        int i = l, j = m + 1, k = l;
+        while (i <= m || j <= h) {
+            if (i > m) {
+                tmp[k] = nums[j++];
+            } else if (j > h) {
+                tmp[k] = nums[i++];
+            } else if (nums[i] <= nums[j]) {
+                tmp[k] = nums[i++];
+            } else if (nums[i] > nums[j]) {
+                tmp[k] = nums[j++];
+                cnt += m - i + 1;
+            }
+            k++;
+        }
+        for (k = l; k <= h; k++) {
+            nums[k] = tmp[k];
+        }
     }
 }
