@@ -59,18 +59,97 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        int[][] increase  = new int[][] {
-                {2,8,4},{2,5,0},{10,9,8}
-        };
-        int[][] requirements   = new int[][] {
-                {2,11,3},{15,10,7},{9,17,12},{8,1,14}
-        };
-//        int[][] increase  = new int[][] {
-//                {0,4,5},{4,8,8},{8,6,1},{10,10,0}
-//        };
-//        int[][] requirements   = new int[][] {
-//                {12,11,16},{20,2,6},{9,2,6},{10,18,3},{8,14,9}
-//        };
-        System.out.println(new Solution().getTriggerTime( increase, requirements));
+        int[] cost = new int[]{13,12,9,12,15,11,10,11,15};
+       // System.out.println(new Solution().largestNumber(cost, 52));
+    }
+
+
+//    public String largestNumber(int[] cost, int target) {
+//        int[][] dp= new int[12][target+7];
+//        Arrays.fill(dp, 0x8f);
+//
+//        dp[0][0] = 0;
+//        for (int i = 1; i <= 9; ++i) {
+//            for (int j = 0; j <= target; ++j) {
+//                for (int k = 0; k*cost[i-1] <= j; ++k) {
+//                    dp[i][j] = Math.max(dp[i][j], dp[i-1][j-k*cost[i-1]]+k);
+//                }
+//            }
+//        }
+//        int u = 0;
+//        for (int i = 1; i <= 9; ++i) {
+//            if (dp[i][target] >= dp[u][target]) u = i;
+//        }
+//        if (dp[u][target] <= 0) return "0";
+//        String res;
+//        for (int num = target, k; num >=0 && u>=0; --u) {
+//            for (k = num/cost[u-1]; k >=0; --k) {
+//                if (dp[u][num] == dp[u-1][num-k*cost[u-1]]+k) break;
+//            }
+//            for (int i = 0; i < k; ++i) res += String.valueOf(u);
+//            // res += string(k, to_string(u));
+//            num -= k*cost[u-1];
+//        }
+//        return res;
+//    }
+
+
+
+    private static int cnt =0 ;
+    public int goodNodes(TreeNode root) {
+        if (root == null) return 0;
+
+        ArrayList<Integer> result = new ArrayList<Integer>();
+        cnt =0;
+        preOrder(root, result);
+
+        return cnt;
+    }
+
+    int work(TreeNode root,int m) {
+        if(root==null) return 0;
+        int s=0;
+        if(m<=root.val) {
+            m=root.val;
+            s=1;
+        }
+        s+=work(root.left,m)+work(root.right,m);
+        return s;
+    }
+    void preOrder(TreeNode root,ArrayList<Integer> result){
+        boolean flag = true;
+        result.add(root.val);
+        for (int num : result) {
+            if (num > root.val) {
+                flag = false;
+                break;
+            }
+        }
+        if (flag) {
+            cnt++;
+        }
+        if (root.left != null) {
+            preOrder(root.left, result);
+            result.remove(result.size()-1);
+        }
+
+        if (root.right != null) {
+            preOrder(root.right, result);
+            result.remove(result.size()-1);
+        }
+    }
+
+}
+
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode() {}
+    TreeNode(int val) { this.val = val; }
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
     }
 }
