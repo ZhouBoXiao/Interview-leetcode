@@ -160,7 +160,7 @@ int min = Integer.MAX_VALUE;
 
     int N;
     public static void main(String[] args) {
-        new _二叉树.Main().solution();
+        new _题型分类._二叉树.Main().solution();
     }
 
     void solution(){

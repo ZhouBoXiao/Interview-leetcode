@@ -6,20 +6,8 @@
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 `
 0src/main/java/_公司笔试/_京东/_2/Main.java,9\4\94bb05d2c4f5644dfccbab1241b5291e8b165fda
-m
-=src/main/java/_二叉树/_二叉树最大宽度/Solution.java,1\8\1834d0080bf5f2c02e85fdb1105637ba60131786
-\
-,src/main/java/_600以上/_1091/Solution.java,3\7\376ab85ad26c6c63a640606ef74b80d10eb30b4b
-m
-=src/main/java/_二叉树/_二叉树的左视图/Solution.java,0\e\0e19e40bfe0ef7c19ff6a76db5bb0dbd3cbb4ede
-Y
-)src/main/java/_101_200/_146/Solution.java,6\d\6dc5200527547c920cff619e68525f49981d31e7
 k
 ;src/main/java/面试相关/_n进制转m进制/Solution.java,5\c\5c01f71f23b65497476243460b9ff85cc50659a9
-z
-Jsrc/main/java/_600以上/_673_最长递增子序列的个数/Solution.java,0\9\09f90ef9b3f156199749f4d46eaf3b453aa52b4e
-h
-8src/main/java/_600以上/_684_冗余连接/Solution.java,d\c\dc74ca35e1c0a95d44ddbb6b9a203c8eca672429
 `
 0src/main/java/_剑指offer/_丑数/Solution.java,8\f\8fb692a93339da54402ca982875cd9c8627c06a6
 o
@@ -42,20 +30,12 @@ v
 Fsrc/main/java/_设计模式/_代理模式/_static/TeacherDaoProxy.java,a\4\a4bd990c25fc02d1edd07cbe31baca1abb3b63ed
 m
 =src/main/java/_设计模式/_代理模式/_static/Client.java,9\6\96f91099952bd7a8794d91a64d1ca7e621cf0921
-V
-&src/main/java/_0_100/_94/Solution.java,a\e\ae0bbb382d56144ecc91595f2d67a154b0965e63
 x
 Hsrc/main/java/_剑指offer/_二叉树的最近公共祖先/Solution.java,8\2\82eda2482a7be076985321cac4ce08addb6ea505
 o
 ?src/main/java/_剑指offer/_正则表达式匹配/Solution.java,8\4\8488409a29e71eebe96ed949aa13faedd74b4153
-Y
-)src/main/java/_101_200/_123/Solution.java,1\6\16f01b614e7bf16f4f7899abfdfc096b70b8fb06
 o
 ?src/main/java/_剑指offer/_股票的最大利润/Solution.java,0\b\0b9e3d31ed522ab8b82a2b753d06d0d52561f2ab
-Y
-)src/main/java/_101_200/_188/Solution.java,4\5\45cd4cca2419c099fb2d62bf5f65a2487608f8fb
-s
-Csrc/main/java/_101_200/_122_买股票的最佳时机2/Solution.java,3\8\38a2df08ccbe2751f02f8570aeda4740d3bbca6d
 o
 ?src/main/java/_剑指offer/_数组中的逆序对/Solution.java,0\0\008d34aebfbdfb05f5319f8436408a25827d2599
 y
@@ -66,34 +46,10 @@ j
 :src/main/java/_剑指offer/_最小的k个数/Solution.java,6\f\6f4f8aecf0908b68fe380280547c51876b07afff
 i
 9src/main/java/面试相关/_最小移动数/Solution.java,a\a\aa6df33fea838638a8a2c98f2ded6d427e46b6e1
-�
-Qsrc/main/java/_301_400/_315_计算右侧小于当前元素的个数/Solution.java,c\b\cbd9cdecd1f9ca89e8a67495ca811cd217cae4c1
-Y
-)src/main/java/_201_300/_300/Solution.java,a\a\aaf75f48aee7c6cd43aa2ae706aebb939e7b76b4
-e
-5src/main/java/_链表/_445_两数相加/Solution.java,0\a\0a586238aa3052fde375479ea489d0cc9a83e2fb
-k
-;src/main/java/_链表/_合并K个排序链表/Solution.java,4\5\4503f7437222493bc2ed4539a514ff9d91a482c4
-k
-;src/main/java/_链表/_k个一组翻转链表/Solution.java,c\f\cfe81da556f08cd6f2dee0fa8be2758b9769b185
 c
 3src/main/java/_公司笔试/_米哈游/_1/Main.java,4\6\46b696790a374b99f33d07d9ae8a0bdfd62b36bb
 c
 3src/main/java/_公司笔试/_米哈游/_2/Main.java,4\a\4aa9420c30cd5903415c72bd060e193e24a59ca0
-_
-/src/main/java/_DFS/_打家劫舍3/Solution.java,0\e\0e42e6be3faf69b4a1874ef376251c7ec22bd2d9
-h
-8src/main/java/_DFS/_T秒后青蛙的位置/Solution.java,4\2\429b994b3da6bc65f0a89a80b3d25f579abe5d49
-_
-/src/main/java/_DFS/_组合总和2/Solution.java,1\4\147c6f774cd04f6e4e8492d3d0d11c9fa07bf652
-^
-.src/main/java/_DFS/_组合总和/Solution.java,1\b\1b8ebd86fd07e9bac6eea3b793a6bef0bd3c9fdd
-V
-&src/main/java/_0_100/_47/Solution.java,b\f\bf41f4bfa6d59f3426c264d28b667374f3540aa7
-V
-&src/main/java/_0_100/_78/Solution.java,a\9\a956812cbd318027e5046f2e54f8e353dfee6a86
-Y
-)src/main/java/_DFS/_子集2/Solution.java,c\0\c02a67f3b455b4bbd35fff4103339f62589c1b1a
 w
 Gsrc/main/java/_二分查找_滑动窗口_双指针_模板/Solution.java,6\3\639e8bfdaa543225705b7fd1e63870705db05157
 y
@@ -104,10 +60,6 @@ K
 src/main/java/_SQL/test.sql,c\2\c2db29ce045063f8c257c2534348c86b6ec2b622
 �
 Rsrc/main/java/_公司笔试/leetcode/_分割字符串的最大得分/Solution.java,6\a\6a85b9f1caf1bb79e1928a9c29add60b395b6dbc
-Y
-)src/main/java/_101_200/_115/Solution.java,e\1\e168d24d0216b8824f57a6c1c99a4d7addb35cbc
-b
-2src/main/java/_101_200/_155最小栈/MinStack.java,f\5\f5379973800cca5961e919dfa90fc7d1500c2e51
 S
 #src/main/java/_shell编程/file.txt,2\e\2e14624a3242e16cb5017e462ffefc36e6496cb6
 T
@@ -120,20 +72,6 @@ f
 6src/main/java/_公司笔试/_腾讯笔试/_5/Main.java,8\9\895206a2347b21a076a0c0bf8b86984ab585dd11
 f
 6src/main/java/_公司笔试/_腾讯笔试/_1/Main.java,2\b\2b1ecfcb2cac9bc67f404dc91893673f4f230184
-i
-9src/main/java/_0_100/_32_最长有效括号/Solution.java,a\1\a187d88a504a591d0fe49f89e3a6b15e26468b4a
-v
-Fsrc/main/java/_二分查找/_33_搜索旋转排序数组/Solution.java,b\b\bb67debbab64fa5a76dd1d5dbf635d1e1fb91aa4
-V
-&src/main/java/_0_100/_15/Solution.java,7\c\7c133dc394016146a69bf3fe8381ba10bbbc6db2
-w
-Gsrc/main/java/_二分查找/_81_搜索旋转排序数组2/Solution.java,a\4\a42e9b0cb299e051b2a59c12098801e00cf3a97e
-c
-3src/main/java/_0_100/_48_旋转图像/Solution.java,8\8\882c19102c3803a777aca97bff2bc29f3c3fe47e
-U
-%src/main/java/_0_100/_5/Solution.java,6\b\6be427555de241b8cb3226a6d4fdab9b91def049
-Y
-)src/main/java/_501_600/_516/Solution.java,4\1\41ec1c8e068a92e85f073f7c96679ba090e76249
 j
 :src/main/java/面试相关/_一致性hash/ConHashTest.java,1\c\1cccbcc8041fe063a9d7d80bb061b86b064edfea
 o
@@ -146,10 +84,6 @@ y
 Isrc/main/java/_剑指offer/_数组中数字出现的次数2/Solution.java,8\9\89d3693109cf9db9385223f5ef1a2c244a24eccc
 l
 <src/main/java/_剑指offer/_队列的最大值/MaxQueue.java,8\0\80765aa9ea10a3879d804e30b870fd990c765e78
-U
-%src/main/java/_0_100/_2/Solution.java,1\f\1ff501a7ec5cb060283c5e906887c6458407da3a
-U
-%src/main/java/_0_100/_1/Solution.java,6\0\6060350cb62d5abd1a57066507fab4bec99ac23c
 a
 1src/main/java/_分布式锁/_redis/RedisTest.java,3\d\3dcace6c472e64f77dd5e7c3c1c9eae334fa14da
 a
@@ -174,28 +108,14 @@ Usrc/main/java/_公司笔试/leetcode/_行相等的最少多米诺旋转/Solutio
 Nsrc/main/java/_剑指offer/_寻找两个有序数组的中位数/Solution.java,c\1\c11fad82c32b7cb48c029a1e22c686e6e2fd756b
 l
 <src/main/java/_公司笔试/_腾讯笔试/_3/CloestPair.java,5\1\5115316ad8de53bf5ecaced52af875792b17861d
-p
-@src/main/java/_101_200/_127_单词接龙_双向BFS/Solution.java,7\0\702b85ea1cf7c1a2232eb3ec774bffe844e95992
-l
-<src/main/java/_401_500/_433_最小基因变化/Solution.java,9\3\9398e08853536f172103a795cc222c383168ba7b
 `
 0src/main/java/_公司笔试/_招行/_1/Main.java,6\5\65ae0ec084ada8ac2ef180400e0907fd584122d4
 `
 0src/main/java/_公司笔试/_招行/_2/Main.java,e\8\e88dc59c6f4dcc0ebe14d0c1b8ef6eda769ebf89
 `
 0src/main/java/_公司笔试/_招行/_3/Main.java,4\1\41655a6ca36f900b231a0f14a8db38a106308da7
-q
-Asrc/main/java/_蓄水池抽样/_398_随机数索引/Solution.java,1\d\1db28f48f33dfef177fced8302922e783691256a
-a
-1src/main/java/BFS/_127_单词接龙/Solution.java,f\6\f64a5a5257230ce291b29bd6b8a763d307df474b
 �
 [src/main/java/_公司笔试/leetcode/_节点与其祖先之间的最大差值/Solution.java,7\8\7887a88d80f4a45f96363c296c0620aaf4178e81
-\
-,src/main/java/_600以上/_1027/Solution.java,8\0\80126243fd3930a0c06aa88609d54b13cb85c6a4
-f
-6src/main/java/_600以上/_1419_数青蛙/Solution.java,3\7\37cfc08428a43b441c5f924863cfaecb3debd7dd
-{
-Ksrc/main/java/_600以上/_1095_山脉数组中查找目标值/Solution.java,9\f\9fed645a96ad4f03c432ab88583d6eb7008074e5
 u
 Esrc/main/java/_剑指offer/_把字符串转换成整数/Solution.java,a\4\a43036ff3352e6d4ed3d3fc0776ad186dd7f1e6d
 `
@@ -214,24 +134,12 @@ m
 =src/main/java/_剑指offer/_n个骰子的点数/Solution.java,f\0\f0b5a4efd936e3cd503fd89ae206c54563afb11f
 w
 Gsrc/main/java/_剑指offer/_打印从1到最大的n位数/Solution.java,e\d\ed176bc22b8e9c85e7847c46c7502ec55abdcfaa
-Y
-)src/main/java/_201_300/_202/Solution.java,9\9\994c5e1492166c7e5ce355a1e9b03c35c79042de
-Y
-)src/main/java/_101_200/_153/Solution.java,c\f\cf5994db0c3031310984361863ac2eef0e25fcde
-�
-Rsrc/main/java/_101_200/_154_寻找旋转排序数组中的最小值2/Solution.java,0\b\0bede28edfc4ad96f1e06e72b793311f93327eb1
 l
 <src/main/java/_剑指offer/_构建乘积数组/Solution.java,3\e\3e774b384962c5f3087138474970b65843bcac83
 u
 Esrc/main/java/_剑指offer/_不用加减乘除做加法/Solution.java,0\e\0ebc15ff99b32e0b4d99ed5982e217dbe8298412
 o
 ?src/main/java/_剑指offer/_复杂链表的复制/Solution.java,5\f\5f5f1aed5a56738d44214e87e1908325615072fa
-f
-6src/main/java/_0_100/_31_下一个排列/Solution.java,8\1\810abc3a831e7be09f208475dfef808b34ff632d
-h
-8src/main/java/_600以上/_765_情侣牵手/Solution.java,8\0\8078399477ded628f7c6982d921c7020f4e85d05
-i
-9src/main/java/_201_300/_287_寻找重复数/Solution.java,c\b\cb3232ae7004fe5545fd4a12d2ffdb563c2727f5
 f
 6src/main/java/_公司笔试/_趋势科技/_2/Main.java,6\9\6946d652f462db4f334988cd072c4c9a3a61abc8
 f
@@ -242,33 +150,45 @@ f
 0src/main/java/_公司笔试/_携程/_2/Main.java,1\0\108b7b069e0d607d7b859a83b1dd7e1331645da4
 `
 0src/main/java/_公司笔试/_携程/_3/Main.java,9\b\9b12637b9861fa2853d78b5db20b139fece31d67
-a
-1src/main/java/_图论/_最短路径/Solution.java,5\e\5e1334a22b98a2a7aff9cbfbf6d826d5d71c4b9c
-l
-<src/main/java/_101_200/_128_最长连续序列/Solution.java,4\7\4754d7eeea1cf54ada35fb772ff7a3a2931b3cdb
-q
-Asrc/main/java/_链表/_114_二叉树展开为链表/Solution.java,a\5\a5b4f24b6b5e0da62c5799b077c2a58a754ba684
 z
 Jsrc/main/java/_sortByNumber/_101_200/_128_最长连续序列/Solution.java,7\f\7fc53bc8d891f0b08efb6078c9c95d1b722e9ac7
-n
->src/main/java/_动态规划/_221_最大正方形/Solution.java,5\3\53b02825489d546033cc9c7501a28c72701f92bb
-i
-9src/main/java/_动态规划/_01背包问题/Solution.java,9\c\9c6f5402c4d63a440f2eb712db1d534862a98905
-g
-7src/main/java/_动态规划/_完全背包/Solution.java,e\6\e6a1a00ae1f77f6449a70efcc388d156be5c7954
-x
-Hsrc/main/java/_动态规划/_状态压缩/_旅行商问题/Solution.java,1\2\12d61be6619d9f48bc33adcfa7bf3f8b81269e94
-h
-8src/main/java/_动态规划/_买卖股票1/Solution.java,c\b\cb9f2c2ee4886e53cb1075d9fbf440f31c33a44e
 �
 Qsrc/main/java/_sortByNumber/_101_200/_122_买股票的最佳时机2/Solution.java,5\1\51d8e5228518ddd83119d9cd3b3c9f7effb12a1f
 �
 Ysrc/main/java/_sortByNumber/_401_500/_452_用最少数量的箭引爆气球/Solution.java,8\4\84f7e2db3e816314268311dcbfc8ac6ad57c2186
-R
-"src/main/java/_二叉树/Main.java,5\0\5080dd852756bdd32669bfb83fac8be7450ddf6b
 ]
 -src/main/java/_公司笔试/_阅文/Main.java,7\f\7f95221ca13a10c9b7afb2e40d77cd85db6a9e6c
 g
 7src/main/java/_sortByNumber/_101_200/_130/Solution.java,d\6\d6f80d1e8c67ad939dac9e99371f8155c1db0d55
 `
 0src/main/java/_公司笔试/_阅文/_1/Main.java,2\b\2b120a5ad1b09420de9af9f0bea50bd05b831669
+^
+.src/main/java/面试相关/_Atio/AtioTest.java,d\0\d0c36e2253685c7f80a1e05931306941dcf158e2
+y
+Isrc/main/java/_题型分类/_链表/_合并K个排序链表/Solution.java,e\2\e26cdfe2dc58f78ab0ace825cec787794e434b0a
+h
+8src/main/java/_sortByNumber/_0_100/_8_atio/Solution.java,5\3\5334b2fc1b68a595ddd7803ac1cf4177c842404c
+]
+-src/main/java/_题型分类/_42/Solution.java,f\4\f4e7607967028e194996f0b21aa3a8cd125e4471
+~
+Nsrc/main/java/_题型分类/_二叉树/_98_验证二叉搜索树/Solution.java,2\b\2b9047b9bd79a7a2b90180fd8392c78c369de54b
+`
+0src/main/java/_题型分类/_二叉树/Main.java,0\b\0b821716eb4f489f42eff031224a0f4ee61c7c00
+u
+Esrc/main/java/_题型分类/_二叉树/_重建二叉树/Solution.java,7\7\774e463c679fb430ed914dc7578788baa61506eb
+{
+Ksrc/main/java/_题型分类/_二叉树/_二叉树的左视图/Solution.java,d\6\d6d5e03852854b19cf23b3eb47c4744d87e0d502
+O
+src/main/java/_单例/Main.java,e\7\e7467e0ec5c556475eacee53a53690752831d40c
+g
+7src/main/java/_sortByNumber/_201_300/_215/Solution.java,b\8\b86e24e70080493aad0ef8078d6a825e5728f663
+o
+?src/main/java/面试相关/求出现次数的TopK/Solution.java,e\5\e532414b40a03a6aeb838da72750928dc25b05b5
+�
+Xsrc/main/java/_sortByNumber/_0_100/_4_寻找两个正序数组的中位数/Solution.java,b\9\b9acaaa66ffc46a1dd7a7aeedfb0416b2114b964
+v
+Fsrc/main/java/_sortByNumber/_0_100/_5_最长回文子串/Solution.java,1\7\174e701dcc71456ff756b5bb0644f114b68f8806
+_
+/src/main/java/面试相关/ClassLoaderTest.java,e\c\ec707b74ccbad3696415955cb6a9959699afcd67
+
+Osrc/main/java/_题型分类/_链表/_114_二叉树展开为链表/Solution.java,3\1\310b13db6552498bb90c00b89d95546a91a12c26

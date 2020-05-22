@@ -1,5 +1,12 @@
 package _sortByNumber._201_300._215;
 
+import sun.plugin.javascript.navig.Array;
+
+import java.io.FileInputStream;
+import java.io.FilterInputStream;
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class Solution {
 
 
@@ -15,9 +22,10 @@ public class Solution {
                 nums[0] = nums[i];
             heap(nums, 0, k);
         }
+
         return nums[0];
     }
-
+    
     private void heap(int[] nums, int pos, int length) {
         int temp = nums[pos];
         for (int i = 2*pos + 1; i < length; i = 2*i + 1) {
