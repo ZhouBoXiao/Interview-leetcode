@@ -24,15 +24,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         long n = scanner.nextLong();
 
-
-
         System.out.println(n * p(n-1) % MOD);
 
     }
-
-
-
-
     public static void main(String[] args) {
         new Main().solution();
     }

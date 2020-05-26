@@ -118,6 +118,7 @@ class ConsistentHash {
 
         Integer hash = hashFunction.hash(key);
         if (!circle.containsKey(hash)) {
+                                                 // greater than or equal to {@code fromKey}
             SortedMap<Integer,Node> tailMap = circle.tailMap(hash);// 沿环的顺时针找到一个虚拟节点
             hash = tailMap.isEmpty() ? circle.firstKey() : tailMap.firstKey();
         }
