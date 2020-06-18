@@ -1,4 +1,4 @@
-package _sortByNumber._0_100._84;
+package _sortByNumber._0_100._84_柱状图中最大的矩形;
 
 import java.util.*;
 
@@ -62,7 +62,8 @@ public class Solution {
                 right[mono_stack.peek()] = i;  // 当前peek 比i大，所有右边界是i
                 mono_stack.pop();
             }
-            left[i] = (mono_stack.isEmpty() ? -1 : mono_stack.peek());
+            // mono_stack 是单调递增的栈
+            left[i] = (mono_stack.isEmpty() ? -1 : mono_stack.peek()); // peek 是i左边界
             mono_stack.push(i);
         }
 

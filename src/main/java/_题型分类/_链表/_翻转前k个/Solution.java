@@ -11,10 +11,10 @@ public class Solution {
 
     // 反转以 head 为起点的 n 个节点，返回新的头结点
     ListNode reverseN(ListNode head, int n) {
-       if (n == 1) {
-           successor = head.next;
-           return head;
-       }
+        if (n == 1) {
+            successor = head.next;
+            return head;
+        }
         ListNode last = reverseN(head.next, n - 1);
         head.next.next = head;
         head.next = successor;
