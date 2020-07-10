@@ -20,7 +20,6 @@ class soultion1 {
     }
     private int[] getLeastNumbers(int[] arr, int low, int high, int k) {
 
-        //int mid = low + (high - low) >> 1;
         int mid = partition(arr, low , high);
         if (mid == k) {
 

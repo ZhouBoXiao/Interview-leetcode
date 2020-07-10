@@ -12,6 +12,32 @@ import java.util.Arrays;
  */
 public class Solution {
     public void nextPermutation(int[] nums) {
+        int len = nums.length;
+        for (int i = len - 1; i >= 0; i--) {
+            for (int j = len - 1; j > i; j--) {
+                if (nums[i] < nums[j]){
+                    swap(nums,i,j);
+                    reverse(nums,i+1,len-1);
+                    return;
+                }
+            }
+        }
+        reverse(nums,0,len-1);
+
+    }
+
+    private void swap(int nums[], int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
+
+    private void reverse(int[] nums, int lo, int hi){
+        while(lo < hi){
+            swap(nums, lo++, hi--);
+        }
+    }
+    /*public void nextPermutation(int[] nums) {
         int n = nums.length;
         for (int i = n - 1; i > 0; i--) {
             if (nums[i - 1] < nums[i]) {
@@ -33,5 +59,5 @@ public class Solution {
         int temp = nums[i];
         nums[i] = nums[j];
         nums[j] = temp;
-    }
+    }*/
 }
