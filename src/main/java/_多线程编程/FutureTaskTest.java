@@ -14,12 +14,7 @@ public class FutureTaskTest {
         while (true) {
             Future<String> future = taskCache.get(taskName);  // 1.1 2.1
             if (future == null) {
-                Callable<String> task = new Callable<String>() {
-                    @Override
-                    public String call() throws Exception {
-                        return taskName;
-                    }
-                };
+                Callable<String> task = () -> taskName;
                 //1.2
                 FutureTask<String> futureTask = new FutureTask<>(task);
                 future = taskCache.putIfAbsent(taskName, futureTask);

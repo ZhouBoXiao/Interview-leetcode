@@ -15,7 +15,7 @@ public class Solution {
         TreeNode cur = root;
 //        stack.push(root);
         while (!stack.isEmpty() || cur!=null) {
-            if (cur!=null) {
+            if (cur != null) {
                 stack.push(cur);
                 cur = cur.right;
             } else {

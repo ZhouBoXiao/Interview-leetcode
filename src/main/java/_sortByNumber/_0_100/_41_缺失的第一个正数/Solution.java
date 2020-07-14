@@ -22,4 +22,8 @@ public class Solution {
         }
         return n+1;
     }
+
+    public static void main(String[] args) {
+        new Solution().firstMissingPositive(new int[]{0,1,2});
+    }
 }
