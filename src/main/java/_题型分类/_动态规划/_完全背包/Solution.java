@@ -10,17 +10,41 @@ public class Solution {
     int n,W;
     int[] w,v;
 
-    int[][] dp;
-    void solve2() {
+    int[] dp;
+    // 0 1 背包
+    void solve1() {
         for (int i =  0; i < n ; i++) {
-            for (int j = 0; j <= W ; j++) {
-                if (j < w[i]) {
-                    dp[i+1][j] = dp[i][j];
-                } else {
-                    dp[i+1][j] = Math.max(dp[i][j], dp[i+1][j - w[i]] + v[i]);
+            for (int j = W; j >= w[i] ; j--) {
+
+                dp[j] = Math.max(dp[j], dp[j - w[i]] + v[i]);
+            }
+        }
+        System.out.println(dp[W]);
+    }
+
+    // 完全背包
+
+    void solve2() {
+        int m = 0;
+        for (int i =  0; i < n ; i++) {
+            for (int j = w[i]; j <= m ; j++) {
+                dp[j] = Math.max(dp[j], dp[j - w[i]] + v[i]);
+            }
+        }
+        System.out.println(dp[W]);
+    }
+
+
+    // 多重背包
+    void solve3() {
+        int s = 0, m = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = m; j >= 0; j++) {
+                for (int k = 1; k <= s && k * w[i] <= j ; k++) {
+                    dp[j] = Math.max(dp[j], dp[j - k * w[i] ] + k * v[i] );
                 }
             }
         }
-        System.out.println(dp[n][W]);
+        System.out.println(dp[m]);
     }
 }

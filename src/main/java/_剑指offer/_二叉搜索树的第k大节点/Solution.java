@@ -13,7 +13,6 @@ public class Solution {
         if (root == null) return 0;
         Stack<TreeNode> stack = new Stack<>();
         TreeNode cur = root;
-//        stack.push(root);
         while (!stack.isEmpty() || cur!=null) {
             if (cur != null) {
                 stack.push(cur);
@@ -26,6 +25,4 @@ public class Solution {
         }
         return cur.val;
     }
-
-
 }
