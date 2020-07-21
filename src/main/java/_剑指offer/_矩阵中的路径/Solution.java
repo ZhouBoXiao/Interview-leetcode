@@ -26,7 +26,7 @@ public class Solution {
         for (int i = 0 ; i < 4 ; i++) {
             int dx = x + dir[i][0];
             int dy = y + dir[i][1];
-            if (dx < 0 || dx >=board.length || dy < 0 || dy >= board[0].length || vis[dx][dy]) continue;
+            if (dx < 0 || dx >= board.length || dy < 0 || dy >= board[0].length || vis[dx][dy]) continue;
 
             if (cur+ 1 < word.length() && word.charAt(cur + 1) == board[dx][dy] ) {
                 vis[dx][dy] = true;

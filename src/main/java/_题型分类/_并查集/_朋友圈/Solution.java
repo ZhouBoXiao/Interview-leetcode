@@ -41,7 +41,40 @@ class Solution1 {
 //    }
 }
 
-class UF{
+
+class UF {
+    int[] par;
+    UF(int n ){
+        par = new int[n];
+        for (int i = 0; i < n; i++) {
+            par[i] = i;
+        }
+    }
+
+    int find(int x) {
+        if (par[x] == x) {
+            return x;
+        } else {
+            return par[x] = find(par[x]);
+        }
+    }
+
+    void union(int x, int y) {
+        x = find(x);
+        y = find(y);
+        if (x != y) {
+            par[x] = y;
+        }
+    }
+
+    boolean same(int x, int y) {
+        return find(x) == find(y);
+    }
+
+}
+
+
+/*class UF{
 
     int[] par;
 
@@ -71,7 +104,7 @@ class UF{
     boolean same(int x, int y) {
         return find(x) == find(y);
     }
-}
+}*/
 
 //public class Solution {
 //    public static void main(String[] args) {

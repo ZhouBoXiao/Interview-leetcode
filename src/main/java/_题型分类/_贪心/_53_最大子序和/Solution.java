@@ -28,10 +28,8 @@ public class Solution {
         return result;
 
     }
-    int maxSubArrayHelper(int[] nums, int left, int right)
-    {
-        if (left == right)
-        {
+    int maxSubArrayHelper(int[] nums, int left, int right) {
+        if (left == right) {
             return nums[left];
         }
         int mid = (left + right) / 2;

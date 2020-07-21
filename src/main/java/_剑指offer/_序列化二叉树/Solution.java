@@ -13,8 +13,8 @@ public class Solution {
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
         if(root==null)  {return "null";}
-        StringBuilder str=new StringBuilder();
-        Queue<TreeNode> queue=new LinkedList();
+        StringBuilder str = new StringBuilder();
+        Queue<TreeNode> queue = new LinkedList();
         queue.add(root);
         str.append(root.val).append(",");
 

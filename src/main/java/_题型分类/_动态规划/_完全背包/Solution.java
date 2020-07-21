@@ -37,6 +37,7 @@ public class Solution {
 
     // 多重背包
     void solve3() {
+
         int s = 0, m = 0;
         for (int i = 0; i < n; i++) {
             for (int j = m; j >= 0; j++) {

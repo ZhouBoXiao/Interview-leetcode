@@ -26,7 +26,7 @@ public class Solution {
             while (!queue.isEmpty() && nums[i] > nums[queue.peekLast()]) {
                 queue.pollLast();
             }
-            queue.offer(i);
+            queue.addLast(i);
             if(i >= k - 1) {
                 res[j++] = nums[queue.peek()];
             }
