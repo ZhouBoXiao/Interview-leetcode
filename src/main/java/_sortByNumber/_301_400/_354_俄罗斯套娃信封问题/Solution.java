@@ -60,7 +60,6 @@ public class Solution {
             if (low == maxL) {
                 maxL++;
             }
-
         }
         return maxL;
     }

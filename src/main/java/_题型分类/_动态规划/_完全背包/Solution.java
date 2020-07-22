@@ -40,7 +40,7 @@ public class Solution {
 
         int s = 0, m = 0;
         for (int i = 0; i < n; i++) {
-            for (int j = m; j >= 0; j++) {
+            for (int j = m; j >= 0; j--) {
                 for (int k = 1; k <= s && k * w[i] <= j ; k++) {
                     dp[j] = Math.max(dp[j], dp[j - k * w[i] ] + k * v[i] );
                 }

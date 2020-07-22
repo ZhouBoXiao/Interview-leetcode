@@ -20,4 +20,18 @@ public class Solution {
         }
         return nums[l];
     }
+
+    public int minArray(int[] nums) {
+        int n = nums.length - 1;
+        if (n < 0) return -1;
+        while (n > 0 && nums[n] == nums[0]) n -- ;
+        if (nums[n] >= nums[0]) return nums[0];
+        int l = 0, r = n;
+        while (l < r) {
+            int mid = l + r >> 1;       // [l, mid], [mid + 1, r]
+            if (nums[mid] < nums[0]) r = mid;
+            else l = mid + 1;
+        }
+        return nums[r];
+    }
 }
