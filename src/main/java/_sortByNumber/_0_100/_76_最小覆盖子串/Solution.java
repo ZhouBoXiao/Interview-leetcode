@@ -1,4 +1,4 @@
-package _sortByNumber._0_100._76;
+package _sortByNumber._0_100._76_最小覆盖子串;
 
 import java.util.HashMap;
 
@@ -11,8 +11,8 @@ public class Solution {
         int sLen = s.length();
         int tLen = t.length();
         int min = Integer.MAX_VALUE;
-        HashMap<Character, Integer> windows = new HashMap<Character, Integer>();
-        HashMap<Character, Integer> needs = new HashMap<Character, Integer>();
+        HashMap<Character, Integer> windows = new HashMap<>();
+        HashMap<Character, Integer> needs = new HashMap<>();
         for (int i = 0; i < tLen; i++) {
             needs.put(t.charAt(i), needs.getOrDefault(t.charAt(i),0) + 1);
         }
