@@ -1,4 +1,4 @@
-package _sortByNumber._0_100._45;
+package _sortByNumber._0_100._45_跳跃游戏2;
 
 
 /**
@@ -30,7 +30,23 @@ public class Solution {
 
         return res;
     }
+    public int jump1(int[] nums) {
+        if (nums.length < 2) return 0;
+        int l = 0 ,r = 0;
+        int step = 0;
+        while (l <= r) {
+            int max = 0;
+            for (int i = l; i <= r; i++) {
+                max = Math.max(max, i + nums[i]);
+            }
+            l = r + 1;
+            r = max;
+            step++;
+            if (r >= nums.length - 1) break;
+        }
 
+        return step;
+    }
     public static void main(String[] args) {
         int[] nums = new int[]{2,3,1,1,4};
         System.out.println(new Solution().jump(nums));
