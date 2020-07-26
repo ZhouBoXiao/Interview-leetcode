@@ -1,10 +1,15 @@
 package _题型分类._二叉树._98_验证二叉搜索树;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode(int x) {val = x;}
+    AtomicInteger atomicInteger = new AtomicInteger();
+    TreeNode(int x) {val = x;
+
+    }
 }
 
 public class Solution {

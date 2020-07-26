@@ -1,4 +1,4 @@
-package _sortByNumber._0_100._72;
+package _sortByNumber._0_100._72_编辑距离;
 
 public class Solution {
     public int minDistance(String word1, String word2) {

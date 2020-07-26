@@ -1,6 +1,8 @@
-package _sortByNumber._101_200._120;
+package _sortByNumber._101_200._120_三角形最短路径和;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Solution {
     public int minimumTotal(List<List<Integer>> triangle) {
