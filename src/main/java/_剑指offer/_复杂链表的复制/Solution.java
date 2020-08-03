@@ -40,6 +40,7 @@ public class Solution {
 
         return map.get(head);
     }
+
     public Node copyRandomList1(Node head) {
         if (head == null) return null;
         //将拷贝节点放到原节点后面，例如1->2->3这样的链表就变成了这样1->1'->2'->3->3'

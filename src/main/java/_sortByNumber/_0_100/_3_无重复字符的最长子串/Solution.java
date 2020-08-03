@@ -1,4 +1,4 @@
-package _sortByNumber._0_100._3;
+package _sortByNumber._0_100._3_无重复字符的最长子串;
 
 import java.util.*;
 
@@ -22,14 +22,13 @@ public class Solution {
     }
     public int lengthOfLongestSubstring1(String s) {
 
-        int n = s.length();
         int[] index = new int[128];
         int left = 0;
         int maxLen = 0;
-        for (int right = 0; right < n; right++) {
-            left = Math.max(index[s.charAt(right)], left);
-            maxLen = Math.max(maxLen, right - left + 1);
-            index[s.charAt(right)] = right + 1;
+        for (int i = 0; i < s.length(); i++) {
+            left = Math.max(left, index[s.charAt(i)]);
+            maxLen = Math.max(maxLen, i - left + 1);
+            index[s.charAt(i)] = i + 1;
         }
         return maxLen;
     }

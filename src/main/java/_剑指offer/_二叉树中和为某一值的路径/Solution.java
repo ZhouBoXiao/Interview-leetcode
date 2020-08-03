@@ -46,4 +46,25 @@ public class Solution {
 
         new Solution().pathSum(root, -5);
     }
+    public ArrayList<ArrayList<Integer>> FindPath(TreeNode root,int target) {
+        ArrayList<ArrayList<Integer>> res=new ArrayList<>();
+        ArrayList<Integer> cur=new ArrayList<>();
+
+        helper(root,target,cur,res);
+        Collections.sort(res, (o1,o2) -> o1.size() - o2.size());
+        return res;
+    }
+    public void helper(TreeNode root,int target,ArrayList<Integer> cur,ArrayList<ArrayList<Integer>> res){
+        if (root==null) return;
+        int value=root.val;
+        cur.add(value);
+        if (target==value&&root.left==null&&root.right==null){
+            res.add(new ArrayList<>(cur));
+        }else {
+            helper(root.left,target-value,cur,res);
+            helper(root.right,target-value,cur,res);
+        }
+
+        cur.remove(cur.size()-1);
+    }
 }

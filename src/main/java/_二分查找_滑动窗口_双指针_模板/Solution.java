@@ -1,5 +1,7 @@
 package _二分查找_滑动窗口_双指针_模板;
 
+import java.util.Deque;
+
 /**
  * 1、从有序数组中查找某个值
  * 最大化最小值，最小化平均值用二分
@@ -23,6 +25,7 @@ public class Solution {
     }
 
     int left_bound(int[] nums, int target) {
+
         int left = 0, right = nums.length - 1;
         while (left <= right) {
             int mid = left + (right - left) / 2;

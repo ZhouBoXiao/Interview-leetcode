@@ -6,7 +6,7 @@ public class Solution {
         for (int i = 0 ; i < nums.length; i++) {
             sum ^= nums[i];
         }
-        int flag = sum & (-sum);
+        int flag = sum & (-sum);  //得到sum的二进制的1的最低位想·x`
         int[] res = new int[2];
         for (int i = 0 ; i < nums.length; i++) {
             if ((flag & nums[i] ) == 0) {

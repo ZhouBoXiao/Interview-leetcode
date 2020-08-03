@@ -43,4 +43,24 @@ public class Solution {
         }
         return water;
     }
+
+    public int trap2(int[] height) {
+        int n = height.length;
+        int lmax = 0, rmax = 0;
+        int left = 0, right = n - 1;
+        int res = 0;
+        while (left <= right) {
+
+            lmax = Math.max(lmax, height[left]);
+            rmax = Math.max(rmax, height[right]);
+            if (lmax < rmax) {
+                res += lmax - height[left];
+                left++;
+            } else {
+                res += rmax - height[right];
+                right--;
+            }
+        }
+        return res;
+    }
 }
