@@ -1,6 +1,8 @@
 package _题型分类._二叉树._二叉树最大宽度;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 class TreeNode {
 
@@ -12,7 +14,6 @@ class TreeNode {
 
 public class Solution {
     private int maxN = 0;
-
 
     public int widthOfBinaryTree(TreeNode root) {
         if (root == null)

@@ -1,7 +1,6 @@
 package 面试相关;
 
 
-import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
@@ -22,6 +21,8 @@ public class ConcurrentHashMapTest {
     }
     public static void main(String[] args) {
         testAllocation();
+
+//        new HashMap<>()
             ConcurrentMap<String, String> stringStringConcurrentHashMap = new ConcurrentHashMap<>();
 
     }

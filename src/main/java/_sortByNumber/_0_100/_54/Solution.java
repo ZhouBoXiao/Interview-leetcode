@@ -6,13 +6,12 @@ import java.util.List;
 public class Solution {
     public List< Integer > spiralOrder(int[][] matrix) {
 
-        List ans = new ArrayList();
+        List<Integer> ans = new ArrayList<Integer>();
         if (matrix.length == 0)
             return ans;
         int up = 0, down = matrix.length - 1;
         int left = 0, right = matrix[0].length - 1;
         while (true) {
-
             for (int i = left; i <= right; i++) ans.add(matrix[up][i]);
             if (++up > down) break;
             for (int i = up; i <= down; i++) ans.add(matrix[i][right]);

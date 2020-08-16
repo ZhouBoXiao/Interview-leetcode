@@ -27,9 +27,19 @@ public class Solution {
         ListNode l = mergeSort(head);
         ListNode r = mergeSort(p);
 
-        return merge(l, r);
+        return merge1(l, r);
     }
-
+    private ListNode merge1(ListNode l, ListNode r) {
+        if (l == null) return r;
+        if (r == null) return l;
+        if (l.val <= r.val) {
+            l.next = merge1(l.next, r);
+            return l;
+        } else {
+            r.next = merge1(l, r.next);
+            return r;
+        }
+    }
     private ListNode merge(ListNode l, ListNode r) {
         ListNode temp = new ListNode(0);
         ListNode cur = temp;
@@ -51,7 +61,6 @@ public class Solution {
             cur.next = r;
         }
         return temp.next;
-
     }
 
 

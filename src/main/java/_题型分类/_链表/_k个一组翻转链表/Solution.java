@@ -37,4 +37,18 @@ public class Solution {
         a.next = reverseKGroup(b, k);
         return newHead ;
     }
+
+    public ListNode reverseNGroup(ListNode head, int k) {
+        if (head == null) return null;
+        ListNode a, b;
+        a = b = head;
+        for (int i = 0; i < k; i++) {
+            if (b == null) return head;
+            b = b.next;
+        }
+        ListNode newHead =  reverse(a, b);
+        a.next = reverseNGroup(b, k);
+        return newHead;
+    }
+
 }

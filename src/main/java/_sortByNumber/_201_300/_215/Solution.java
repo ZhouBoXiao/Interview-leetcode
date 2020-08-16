@@ -1,12 +1,5 @@
 package _sortByNumber._201_300._215;
 
-import sun.plugin.javascript.navig.Array;
-
-import java.io.FileInputStream;
-import java.io.FilterInputStream;
-import java.util.Arrays;
-import java.util.Comparator;
-
 public class Solution {
 
 
@@ -54,12 +47,12 @@ public class Solution {
      * 解法一：利用快排
      * @param args
      */
-    /*public int findKthLargest(int[] nums, int k){
+    public int findKthLargest1(int[] nums, int k){
         // k是要求的第几大(从1开始计数),k-1即是数组中的序号(0开始计数)
         return findKthLargest(nums,0,nums.length-1,k-1);
     }
     public int findKthLargest(int[] nums,int low,int high,int k){
-        int index = partition(nums,low,high,k);
+        int index = partition(nums,low,high);
         if (index == k)
             return nums[index];
         else if (index>k)
@@ -70,21 +63,20 @@ public class Solution {
 
     // 同快排的partation,每次确定一个枢轴的位置,并返回其index
     // 找第k 大 的数就把数组按大->小排列
-    private int partition(int[] nums,int low,int high,int k){
-        int pivot = nums[low];
-
-        while (low<high){
-            while (low<high && nums[high]<=pivot) // nums[high]<=pivot 体现出把数组按大->小排列
-                high--;
-            nums[low] = nums[high];
-
-            while (low< high && nums[low]>=pivot)
-                low++;
-            nums[high] = nums[low];
+    private int partition(int[] nums,int left,int right){
+        int temp = left;
+        while (left < right){
+            while (left < right && nums[right] >= nums[temp]) right--;
+            while (left < right && nums[left] <= nums[temp]) left++;
+            swap(nums, left, right);
         }
+        swap(nums, temp, right);
+        return right;
+    }
 
-        nums[low] = pivot;
-        return low;
-    }*/
-
+    void swap(int[] nums, int left, int right) {
+        int temp = nums[left];
+        nums[left] = nums[right];
+        nums[right] = temp;
+    }
 }

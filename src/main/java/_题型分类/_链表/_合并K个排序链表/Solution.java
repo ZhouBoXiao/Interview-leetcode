@@ -1,5 +1,8 @@
 package _题型分类._链表._合并K个排序链表;
 
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
 class ListNode {
     int val;
     ListNode next;
@@ -33,14 +36,39 @@ public class Solution {
     private ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null) return l2;
         if (l2 == null) return l1;
-        ListNode head = null;
-        if (l1.val <= l2.val) {
-            head = l1;
-            head.next = mergeTwoLists(l1.next, l2);
+        if (l1.val <= l2.val ) {
+            l1.next = mergeTwoLists(l1.next, l2);
+            return l1;
         } else {
-            head = l2;
-            head.next = mergeTwoLists(l2.next, l1);
+            l2.next = mergeTwoLists(l1, l2.next);
+            return l2;
         }
-        return head;
+    }
+    public ListNode mergeKLists1(ListNode[] lists) {
+
+        if (lists.length == 0) {
+            return null;
+        }
+
+        ListNode dummyHead = new ListNode(0);
+        ListNode curr = dummyHead;
+        PriorityQueue<ListNode> pq = new PriorityQueue<>(Comparator.comparingInt(o -> o.val));
+
+        for (ListNode list : lists) {
+            if (list == null) {
+                continue;
+            }
+            pq.add(list);
+        }
+
+        while (!pq.isEmpty()) {
+            ListNode nextNode = pq.poll();
+            curr.next = nextNode;
+            curr = curr.next;
+            if (nextNode.next != null) {
+                pq.add(nextNode.next);
+            }
+        }
+        return dummyHead.next;
     }
 }

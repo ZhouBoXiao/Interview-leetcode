@@ -1,7 +1,7 @@
 package _sortByNumber._0_100._72_编辑距离;
 
 public class Solution {
-    public int minDistance(String word1, String word2) {
+    public static int minDistance(String word1, String word2) {
         if (word1 == null && word2 == null) return 0;
 
         if (word1 == null ) return word2.length();
@@ -28,5 +28,9 @@ public class Solution {
             }
         }
         return dp[word1.length()][word2.length()];
+    }
+
+    public static void main(String[] args) {
+        minDistance("horse", "ros");
     }
 }
