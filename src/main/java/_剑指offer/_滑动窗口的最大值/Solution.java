@@ -23,12 +23,12 @@ public class Solution {
             if (!queue.isEmpty() && i - queue.peek() >= k) {
                 queue.poll();
             }
-            while (!queue.isEmpty() && nums[i] > nums[queue.peekLast()]) {
+            while (!queue.isEmpty() &&  nums[queue.peekLast()] < nums[i]) {
                 queue.pollLast();
             }
             queue.addLast(i);
             if(i >= k - 1) {
-                res[j++] = nums[queue.peek()];
+                res[j++] = nums[queue.getFirst()];
             }
         }
         return res;

@@ -204,6 +204,59 @@ public class Main {
         arr[i] = temp;
     }
 
+    /**
+     * 排序链表
+     */
+    public ListNode sortList(ListNode head) {
+
+        return head == null ? null : mergeSort(head);
+    }
+    private ListNode mergeSort(ListNode head) {
+        if (head.next == null) return head;
+        ListNode p = head, q = head, pre = null;
+        while (q != null && q.next != null) {
+            pre = p;
+            p = p.next;
+            q = q.next.next;
+        }
+        pre.next = null;
+        ListNode l = mergeSort(head);
+        ListNode r = mergeSort(p);
+        return merge1(l, r);
+    }
+    private ListNode merge1(ListNode l, ListNode r) {
+        if (l == null) return r;
+        if (r == null) return l;
+        if (l.val <= r.val) {
+            l.next = merge1(l.next, r);
+            return l;
+        } else {
+            r.next = merge1(l, r.next);
+            return r;
+        }
+    }
+
+    /**
+     *  加油站
+     * @param args
+     */
+    public int canCompleteCircuit(int[] gas, int[] cost) {
+        int i =0, j = 0;
+        int n = gas.length;
+        for (i =0 ; i < n; i += j + 1) {
+            int gas_left = 0;
+            for (j = 0; j < n; j++) {
+                int k = (i + j) % n;
+                gas_left += gas[k] - cost[k];
+                if (gas_left < 0) {
+                    break;
+                }
+            }
+            if (j >= n) return i;
+        }
+        return -1;
+    }
+
     public static void main(String[] args) {
         System.out.println(new Main().findKthLargest1(new int[]{1, 2, 3, 4, 5, 6}, 2));
     }

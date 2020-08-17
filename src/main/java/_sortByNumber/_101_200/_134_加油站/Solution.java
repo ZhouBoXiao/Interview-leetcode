@@ -9,7 +9,7 @@ public class Solution {
     public int canCompleteCircuit(int[] gas, int[] cost) {
         int i =0, j = 0;
         int n = gas.length;
-        for (i =0 ; i < n; i += j + 1) {
+        for (i = 0 ; i < n; i += j + 1) {
             int gas_left = 0;
             for (j = 0; j < n; j++) {
                 int k = (i + j) % n;
