@@ -1,6 +1,8 @@
-package _sortByNumber._0_100._15;
+package _sortByNumber._0_100._15_三数之和;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Solution {
     public List<List<Integer>> threeSum(int[] nums) {

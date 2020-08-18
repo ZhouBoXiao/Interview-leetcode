@@ -43,8 +43,8 @@ public class Codec {
         if (data == null || "".equals(data)) return null;
         if("null".equals(data)) return null;
         String[] strs = data.split(",");
-        TreeNode root = new TreeNode(Integer.valueOf(strs[0]));
-        Queue<TreeNode> queue = new LinkedList();
+        TreeNode root = new TreeNode(Integer.parseInt(strs[0]));
+        Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
         for (int i = 1; i < strs.length;) {
 
@@ -54,14 +54,14 @@ public class Codec {
                 if ("null".equals(strs[i])) {
                     node.left = null;
                 } else {
-                    node.left = new TreeNode(Integer.valueOf(strs[i]));
+                    node.left = new TreeNode(Integer.parseInt(strs[i]));
                     next.offer(node.left);
                 }
                 i++;
                 if ("null".equals(strs[i])) {
                     node.right = null;
                 } else {
-                    node.right = new TreeNode(Integer.valueOf(strs[i]));
+                    node.right = new TreeNode(Integer.parseInt(strs[i]));
                     next.offer(node.right);
                 }
                 i++;

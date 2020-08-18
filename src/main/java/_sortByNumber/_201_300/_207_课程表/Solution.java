@@ -1,5 +1,7 @@
-package _sortByNumber._201_300._207;
-import java.util.*;
+package _sortByNumber._201_300._207_课程表;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Solution {
     /*public boolean canFinish(int numCourses, int[][] prerequisites) {
@@ -44,7 +46,7 @@ public class Solution {
     }
 
     private boolean dfs(List<List<Integer>> adjacency, int[] flags, int i) {
-        //说明在本轮 DFS 搜索中节点 i 被第 22 次访问，即 课程安排图有环 ，直接返回 False。
+        //说明在本轮 DFS 搜索中节点 i 被第 2 次访问，即 课程安排图有环 ，直接返回 False。
         if (flags[i] == 1) return false;
         //说明当前访问节点已被其他节点启动的 DFS 访问，无需再重复搜索，直接返回 True。
         if (flags[i] == -1) return true;

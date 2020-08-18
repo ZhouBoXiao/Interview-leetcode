@@ -1,4 +1,4 @@
-package _sortByNumber._201_300._215;
+package _sortByNumber._201_300._215_数组中的第K个最大元素;
 
 public class Solution {
 
@@ -66,8 +66,8 @@ public class Solution {
     private int partition(int[] nums,int left,int right){
         int temp = left;
         while (left < right){
-            while (left < right && nums[right] >= nums[temp]) right--;
-            while (left < right && nums[left] <= nums[temp]) left++;
+            while (left < right && nums[right] <= nums[temp]) right--;
+            while (left < right && nums[left] >= nums[temp]) left++;
             swap(nums, left, right);
         }
         swap(nums, temp, right);
