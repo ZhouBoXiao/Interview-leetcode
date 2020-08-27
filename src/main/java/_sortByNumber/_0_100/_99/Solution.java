@@ -1,5 +1,7 @@
 package _sortByNumber._0_100._99;
 
+import java.util.HashMap;
+
 class TreeNode {
 
     int val;

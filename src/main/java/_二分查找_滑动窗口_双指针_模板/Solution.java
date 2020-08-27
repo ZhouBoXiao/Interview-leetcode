@@ -1,6 +1,7 @@
 package _二分查找_滑动窗口_双指针_模板;
 
 import java.util.Deque;
+import java.util.HashMap;
 
 /**
  * 1、从有序数组中查找某个值
@@ -38,6 +39,7 @@ public class Solution {
                 right = mid - 1;
             }
         }
+
         // 最后要检查 left 越界的情况
         if (left >= nums.length || nums[left] != target)
             return -1;
