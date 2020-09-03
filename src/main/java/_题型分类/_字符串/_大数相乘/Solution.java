@@ -1,4 +1,4 @@
-package _题型分类._字符串._字符串的乘法;
+package _题型分类._字符串._大数相乘;
 
 public class Solution {
     public String multiply(String num1, String num2) {
