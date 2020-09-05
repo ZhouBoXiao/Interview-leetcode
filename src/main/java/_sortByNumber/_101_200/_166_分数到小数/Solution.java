@@ -17,9 +17,9 @@ public class Solution {
         if (numerator < 0 ^ denominator < 0) {
             fraction.append("-");
         }
-        long x = Math.abs(Long.valueOf(numerator));
-        long y = Math.abs(Long.valueOf(denominator));
-        fraction.append(String.valueOf(x/y));
+        long x = Math.abs(numerator);
+        long y = Math.abs(denominator);
+        fraction.append(x/y);
         long remainder = x % y;
         if (remainder == 0) {
             return fraction.toString();

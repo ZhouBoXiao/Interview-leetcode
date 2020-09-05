@@ -147,6 +147,7 @@ public class Solution {
             }
         }
         List<Integer> list = new ArrayList<>();
+
         for (int num : nums) {
             list.add(num);
         }
