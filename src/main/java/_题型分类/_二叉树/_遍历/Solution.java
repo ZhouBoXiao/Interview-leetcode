@@ -35,6 +35,7 @@ public class Solution {
         return res;
     }
 
+
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         if (root == null) {

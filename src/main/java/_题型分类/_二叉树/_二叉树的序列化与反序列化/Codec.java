@@ -16,7 +16,7 @@ public class Codec {
     public String serialize(TreeNode root) {
         if(root==null)  {return "null";}
         StringBuilder str=new StringBuilder();
-        Queue<TreeNode> queue=new LinkedList();
+        Queue<TreeNode> queue=new LinkedList<>();
         queue.add(root);
         str.append(root.val).append(",");
         while (!queue.isEmpty()) {

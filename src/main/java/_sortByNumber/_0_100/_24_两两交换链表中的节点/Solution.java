@@ -37,6 +37,17 @@ public class Solution {
         return newHead;
     }
 
+
+    public ListNode swapPairs1(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode first = head, second = head.next;
+        first.next = swapPairs(second.next);
+        second.next = first;
+        return second;
+    }
+
     public static void main(String[] args) {
          ListNode h1 = new  ListNode(1);
          ListNode h2 = new  ListNode(2);

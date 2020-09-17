@@ -1,4 +1,4 @@
-package _sortByNumber._0_100._6;
+package _sortByNumber._0_100._6_Z字形变换;
 
 import java.util.*;
 
@@ -25,6 +25,7 @@ public class Solution {
         for (StringBuilder row : rows) ret.append(row);
         return ret.toString();
     }
+
 
     public static void main(String[] args) {
         new Solution().convert("LEETCODEISHIRING", 3);

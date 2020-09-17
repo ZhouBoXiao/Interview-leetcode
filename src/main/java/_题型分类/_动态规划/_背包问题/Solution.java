@@ -58,11 +58,11 @@ public class Solution {
         int s = 0, m = 0;
         for (int i = 0; i < n; i++) {
             int v = 0, w = 0; // cin>>v>>w>>s;
-            for (int k = 0; k <= s ; k *= 2) {
+            for (int k = 1; k <= s ; k *= 2) {
                 s -= k;
                 list.add(new int[]{v * k, w * k});
             }
-            if (s > 0) list.add(new int[]{-1, v * s, w * s});
+            if (s > 0) list.add(new int[]{v * s, w * s});
         }
         for (int[] l : list) {
             for (int j = m; j >= l[1]; j--) {
@@ -80,7 +80,7 @@ public class Solution {
             if (s < 0)  list.add(new int[]{-1, v , w });
             else if (s == 0) list.add(new int[]{0, v, w});
             else {
-                for (int k = 0; k <= s; k *= 2) {
+                for (int k = 1; k <= s; k *= 2) {
                     s -= k;
                     list.add(new int[]{-1, v * k, w * k});
                 }
@@ -89,7 +89,7 @@ public class Solution {
         }
         for (int[] l : list) {
             if (l[0] == -1) {
-                for (int j = m; j >= l[1]; j--) {
+                for (int j = m; j >= l[2]; j--) {
                     dp[j] = Math.max(dp[j], dp[j - l[2]] + l[1]);
                 }
             } else {
@@ -123,9 +123,11 @@ public class Solution {
 
         int s = 0, m = 0;
         for (int i = 0; i < n; i++) {
-            for (int j = m; j >= 0; j--) {
-                for (int k = 0; k < s  ; k++) {
-                    if (j >= w[i]) dp[j] = Math.max(dp[j], dp[j -  w[i] ] + v[i] );
+            int[] w = new int[s];
+            int[] v = new int[s];
+            for (int j = W; j >= 0 ; j--) {
+                for (int k = 0; k < s ; k++) {
+                    if (j >= w[k]) dp[j] = Math.max(dp[j], dp[j - w[k]] +  v[k]);
                 }
             }
         }

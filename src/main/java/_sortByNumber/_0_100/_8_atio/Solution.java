@@ -38,6 +38,7 @@ public class Solution {
                 // 但是 *10 和 + digit 都有可能越界，所有都移动到右边去就可以了。
                 return negative? Integer.MIN_VALUE : Integer.MAX_VALUE;
             }
+
             ans = ans * 10 + digit;
             idx++;
         }

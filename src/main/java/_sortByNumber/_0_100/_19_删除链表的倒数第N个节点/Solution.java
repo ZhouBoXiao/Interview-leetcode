@@ -33,4 +33,26 @@ public class Solution {
         return head;
 
     }
+
+    int cur = 0;
+    public ListNode removeNthFromEnd1(ListNode head, int n) {
+        if (head == null) return null;
+        head.next = removeNthFromEnd1(head.next, n);
+        cur++;
+        if (n == cur) return head.next;
+        return head;
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        ListNode head = new ListNode(1);
+        ListNode pre  = head;
+        for (int i = 2; i <= 5; i++) {
+            head.next = new ListNode(i );
+            head = head.next;
+        }
+        solution.removeNthFromEnd1(pre, 2);
+    }
+
+
 }

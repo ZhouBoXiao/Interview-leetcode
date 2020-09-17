@@ -6,6 +6,7 @@ public class Solution {
     public int minDominoRotations(int[] A, int[] B) {
         Map<Integer, Integer> map = new HashMap<>();
         Map<Integer, Integer> map1 = new HashMap<>();
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < A.length; i++) {
             map.put(A[i], map.getOrDefault(A[i],0) + 1);
         }
