@@ -15,7 +15,7 @@ public class Solution {
         for (int i =0 ; i < s.length(); i++) {
             char cur = s.charAt(i);
             if (cur >= '0') {
-                d = d * 10 - '0' + cur;
+                d = d * 10 + cur - '0';
             }
             if ( (cur < '0' && cur != ' ') || i == s.length() - 1 ) {
                 switch(sign) {
