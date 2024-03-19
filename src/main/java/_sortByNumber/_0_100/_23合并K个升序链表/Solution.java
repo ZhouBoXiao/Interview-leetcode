@@ -24,12 +24,7 @@ public class Solution {
 
         ListNode dummyHead = new ListNode(0);
         ListNode curr = dummyHead;
-        PriorityQueue<ListNode> pq = new PriorityQueue<>(new Comparator<ListNode>() {
-            @Override
-            public int compare(ListNode o1, ListNode o2) {
-                return o1.val - o2.val;
-            }
-        });
+        PriorityQueue<ListNode> pq = new PriorityQueue<>((o1, o2) -> o1.val - o2.val);
 
         for (ListNode list : lists) {
             if (list == null) {

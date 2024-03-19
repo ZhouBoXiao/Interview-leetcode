@@ -1,9 +1,6 @@
 package _剑指offer._滑动窗口的最大值;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.PriorityQueue;
+import java.util.*;
 
 /**
  * @Description:

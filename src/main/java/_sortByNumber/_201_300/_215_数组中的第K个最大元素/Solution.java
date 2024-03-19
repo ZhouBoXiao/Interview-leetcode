@@ -51,14 +51,25 @@ public class Solution {
         // k是要求的第几大(从1开始计数),k-1即是数组中的序号(0开始计数)
         return findKthLargest(nums,0,nums.length-1,k-1);
     }
+
     public int findKthLargest(int[] nums,int low,int high,int k){
+        if (low >= high) {
+            return nums[k];
+        }
         int index = partition(nums,low,high);
         if (index == k)
             return nums[index];
-        else if (index>k)
+        else if (index >= k) {
+            while (index > k && nums[index -1] == nums[index]) {
+                index--;
+            }
             return findKthLargest(nums,low,index-1,k);
-        else
-            return findKthLargest(nums,index+1,high,k);
+        }
+        else {
+            while (index < k && nums[index + 1] == nums[index]) index++;
+            return findKthLargest(nums, index+1, high, k);
+        }
+
     }
 
     // 同快排的partation,每次确定一个枢轴的位置,并返回其index

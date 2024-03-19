@@ -26,6 +26,16 @@ public class Solution {
         return buf.toString();
     }
 
+    long _n26(String s) {
+        StringBuilder ss = new StringBuilder(s).reverse();
+        long res = 0;
+        int radix = 26;
+        for (int i = 0 ; i < ss.length(); i++) {
+            res += (ss.charAt(i) - 'A') * Math.pow(radix, i);
+        }
+        return res;
+    }
+
     long stringNTo10(String N_num, int radix) {
         StringBuilder stringBuilder = new StringBuilder(N_num);
         stringBuilder.reverse();// 反转字符

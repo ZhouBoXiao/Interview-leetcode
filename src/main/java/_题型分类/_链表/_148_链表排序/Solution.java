@@ -51,13 +51,12 @@ public class Solution {
         while (l != null && r != null) {
             if(l.val <= r.val) {
                 cur.next = l;
-                cur = cur.next;
                 l = l.next;
             } else{
                 cur.next = r;
-                cur = cur.next;
                 r = r.next;
             }
+            cur = cur.next;
         }
         if (l != null) {
             cur.next = l;

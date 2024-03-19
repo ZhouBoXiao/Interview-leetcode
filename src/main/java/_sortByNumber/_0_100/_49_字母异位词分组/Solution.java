@@ -23,4 +23,15 @@ public class Solution {
         }
         return new ArrayList<>(map.values());
     }
+
+    public List<List<String>> groupAnagarams(String[] strs) {
+        Map<String, List<String>> map = new HashMap<>();
+        for (String s : strs) {
+            char[] cs = s.toCharArray();
+            Arrays.sort(cs);
+            String key = String.valueOf(cs);
+            map.computeIfAbsent(key, it -> new ArrayList<>()).add(key);
+        }
+        return new ArrayList<>(map.values());
+    }
 }
